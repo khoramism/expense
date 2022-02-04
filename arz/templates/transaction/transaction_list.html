@@ -1,0 +1,11 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block content %}
+    {% for obj in object_list %}
+        <a href='{% url obj.get_absolute_url obj.id %}'> {{obj.reason }}</a>
+        {{obj.price}}
+        {{obj.reason}}
+        
+    {% endfor %}
+{% endblock %}
