@@ -1,6 +1,6 @@
-#from pyrogram import Client , filters 
-#from pyrogram.handlers import MessageHandler
-#from .models import Transaction 
+from pyrogram import Client , filters 
+from pyrogram.handlers import MessageHandler
+from .models import Transaction 
 import json 
 import os 
 path = os.getcwd()
@@ -10,7 +10,7 @@ load_dotenv()
 
 MY_ENV_VAR = os.getenv('tel_api_hash')
 print(MY_ENV_VAR)
-"""
+
 app = Client(
 	'my_account',
 	api_id = os.getenv('tel_api_id'),
@@ -55,4 +55,3 @@ def my_handler(client, message):
 	processr(message.text)
 	
 app.run()	
-"""

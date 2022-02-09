@@ -3,7 +3,8 @@ from django.shortcuts import render, get_list_or_404, get_object_or_404
 from django.views.generic import CreateView, ListView, DetailView
 from .models import Transaction
 # Create your views here.
-
+def nig_view(request):
+    pass
 
 class TransactionListView(ListView):
     model = Transaction
