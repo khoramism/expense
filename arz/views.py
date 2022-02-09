@@ -16,7 +16,8 @@ TEL_API_HASH = os.getenv('tel_api_hash')
 # Create your views here.
 def nig_view(request):
     pass
-
+    
+"""
 def tel_view():
     #MY_ENV_VAR = os.getenv('tel_api_hash')
     #print(MY_ENV_VAR)
@@ -65,7 +66,7 @@ def tel_view():
         processr(message.text)
         
     app.run()
-
+"""
 
 def trans_update(request, id):
     instance = get_object_or_404(Transaction, id=id )
