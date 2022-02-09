@@ -5,7 +5,7 @@
 __pycache__
 db.sqlite3
 media
-my_acco*
+my_account.session
 # Backup files # 
 *.bak 
 
